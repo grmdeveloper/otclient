@@ -7,10 +7,10 @@ function init()
   background = g_ui.displayUI('background')
   background:lower()
 
-  clientVersionLabel = background:getChildById('clientVersionLabel')
-  clientVersionLabel:setText(g_app.getName() .. ' ' .. g_app.getVersion() .. '\n' ..
-                             'Rev  ' .. g_app.getBuildRevision() .. ' ('.. g_app.getBuildCommit() .. ')\n' ..
-                             'Built on ' .. g_app.getBuildDate())
+ -- clientVersionLabel = background:getChildById('clientVersionLabel')
+  --clientVersionLabel:setText(g_app.getName() .. ' ' .. g_app.getVersion() .. '\n' ..
+               --              'Rev  ' .. g_app.getBuildRevision() .. ' ('.. g_app.getBuildCommit() .. ')\n' ..
+                --             'Built on ' .. g_app.getBuildDate())
 
   if not g_game.isOnline() then
     addEvent(function() g_effects.fadeIn(clientVersionLabel, 1500) end)
@@ -24,7 +24,7 @@ function terminate()
   disconnect(g_game, { onGameStart = hide })
   disconnect(g_game, { onGameEnd = show })
 
-  g_effects.cancelFade(background:getChildById('clientVersionLabel'))
+  --g_effects.cancelFade(background:getChildById('clientVersionLabel'))
   background:destroy()
 
   Background = nil
@@ -38,9 +38,9 @@ function show()
   background:show()
 end
 
-function hideVersionLabel()
-  background:getChildById('clientVersionLabel'):hide()
-end
+--function hideVersionLabel()
+ -- background:getChildById('clientVersionLabel'):hide()
+--end
 
 function setVersionText(text)
   clientVersionLabel:setText(text)

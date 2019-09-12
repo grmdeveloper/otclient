@@ -64,7 +64,7 @@ function init()
     g_window.setFullscreen(true)
   else
     -- window size
-    local size = { width = 800, height = 600 }
+    local size = { width = 1024, height = 719 }
     size = g_settings.getSize('window-size', size)
     g_window.resize(size)
 
@@ -82,8 +82,8 @@ function init()
     if maximized then g_window.maximize() end
   end
 
-  g_window.setTitle(g_app.getName())
-  g_window.setIcon('/images/clienticon')
+  g_window.setTitle('Aloreon')
+  g_window.setIcon('/images/logo')
 
   -- poll resize events
   g_window.poll()
