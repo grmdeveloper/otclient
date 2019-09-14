@@ -1,0 +1,18 @@
+
+box.encrypt=1
+box.separate=0
+box.ziplevel=1
+dir.addfiles=Z:\home\gabriel\aloreon\otclient\data\things
+exe.crc=0
+exe.pack=1
+exe.packedfilesvisible=1
+exe.source=Z:\home\gabriel\aloreon\otclient\otclient.exe
+exe.target=aloreon.exe
+key.0=29CDEC27CC8162B47D3EBBD4DA3DE5FF
+key.1=3E5EDC7843FCC9EBDD6147F64AF5E22F
+
+box.contents~
+00 data\things\860\Tibia.dat
+00 data\things\860\Tibia.pic
+00 data\things\860\Tibia.spr
+~

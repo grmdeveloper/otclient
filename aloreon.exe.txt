@@ -1,0 +1,97 @@
+target executable Z:\home\gabriel\aloreon\otclient\aloreon.exe
+
+Relink 18 sections of executable
+SECTION  0(   .text):
++  compressed 4115456 -> 1567059 bytes
++  encrypting 1567232 bytes
++  adding 1567232 bytes
+SECTION  1(   .data):
++  compressed 47104 -> 11218 bytes
++  encrypting 11264 bytes
++  adding 11264 bytes
+SECTION  2(  .rdata):
++  compressed 828928 -> 264941 bytes
++  encrypting 265216 bytes
++  adding 265216 bytes
+SECTION  3(      /4):
++  compressed 1077248 -> 200310 bytes
++  encrypting 200704 bytes
++  adding 200704 bytes
+SECTION  4(    .bss):
++  encrypting 0 bytes
++  adding 0 bytes
+SECTION  5(  .edata):
++  compressed 98816 -> 27867 bytes
++  encrypting 28160 bytes
++  adding 28160 bytes
+SECTION  6(  .idata):
++  compressed 12800 -> 4596 bytes
++  encrypting 4608 bytes
++  adding 4608 bytes
+SECTION  7(    .CRT):
++  encrypting 512 bytes
++  adding 512 bytes
+SECTION  8(    .tls):
+!  contains TLS directory
++  adding 512 bytes
+SECTION  9(   .rsrc):
++  adding 1536 bytes
+SECTION 10(  .reloc):
++  skiped
+SECTION 11(     /14):
++  compressed 97280 -> 15119 bytes
++  encrypting 15360 bytes
++  adding 15360 bytes
+SECTION 12(     /29):
++  compressed 85684736 -> 23657317 bytes
++  encrypting 23657472 bytes
++  adding 23657472 bytes
+SECTION 13(     /41):
++  compressed 1063424 -> 184103 bytes
++  encrypting 184320 bytes
++  adding 184320 bytes
+SECTION 14(     /55):
++  compressed 1747456 -> 395586 bytes
++  encrypting 395776 bytes
++  adding 395776 bytes
+SECTION 15(     /67):
++  compressed 1449472 -> 115765 bytes
++  encrypting 116224 bytes
++  adding 116224 bytes
+SECTION 16(     /78):
++  compressed 4881920 -> 942237 bytes
++  encrypting 942592 bytes
++  adding 942592 bytes
+SECTION 17(     /89):
++  compressed 317952 -> 61158 bytes
++  encrypting 61440 bytes
++  adding 61440 bytes
+
+integrate bootstub
+SECTION 18: 70144 bytes
+SECTION 19:  3584 bytes
+SECTION 20: 29184 bytes
+bootstub compressed to 55808 bytes
+set target executable size to 27510272 bytes (25% of 108951249)
+
+PACKING DEFAULT PACKAGE
+using ZIP compression
+setting compression threshold to 95%
+using strong encryption
++ 112K(37.7%) 'data\things\860\Tibia.dat'
++1199K(30.9%) 'data\things\860\Tibia.pic'
++21870K(51.2%) 'data\things\860\Tibia.spr'
+catalog: 136 bytes
+total: 46876K in 3 files
+
+STATISTICS
+
+size of program     -   27454464 bytes
+size of bootstub    -      55808 bytes
+size of box         -   23742420 bytes (49.5% of original)
+        total size  -   51252692 bytes
+
+exe packing         -          enabled
+exe CRC check       -         disabled
+bootstub            -          release
+SUCCESS
